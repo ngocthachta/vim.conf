@@ -20,9 +20,8 @@ set bs=2     " make backspace behave like normal again
 " it is next to ``m`` and ``n`` which I use for navigating between tabs.
 let mapleader = ","
 
-"colorscheme koehler
 set showcmd
-"filetype plugin on
+filetype plugin on
 set dictionary+=/usr/share/dict/cracklib-small
 set modeline
 set background=dark
@@ -88,7 +87,7 @@ color wombat256mod
 
 " Enable syntax highlighting
 " You need to reload this file for the change to apply
-filetype off
+filetype on
 filetype plugin indent on
 syntax on
 
@@ -139,6 +138,7 @@ set noswapfile
 " curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 " Now you can install any plugin into a .vim/bundle/plugin-name/ folder
 call pathogen#infect()
+call pathogen#helptags()
 
 
 " ============================================================================
@@ -155,10 +155,10 @@ set laststatus=2
 " Settings for ctrlp
 " cd ~/.vim/bundle
 " git clone https://github.com/kien/ctrlp.vim.git
-"" let g:ctrlp_max_height = 30
-"" set wildignore+=*.pyc
-"" set wildignore+=*_build/*
-"" set wildignore+=*/coverage/*
+let g:ctrlp_max_height = 30
+set wildignore+=*.pyc
+set wildignore+=*_build/*
+set wildignore+=*/coverage/*
 
 
 " Settings for python-mode
