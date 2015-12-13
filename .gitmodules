@@ -46,6 +46,3 @@
 [submodule "package/jedi"]
 	path = package/jedi
 	url = https://github.com/davidhalter/jedi.git
-[submodule "bundle/python-mode"]
-	path = bundle/python-mode
-	url = https://github.com/klen/python-mode.git
