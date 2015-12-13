@@ -145,6 +145,9 @@ call pathogen#helptags()
 " Python IDE Setup
 " ============================================================================
 
+" run python code from Vim
+" map <F5> :w <CR>!clear <CR>:!python2 % <CR>
+nnoremap <silent> <F5> :!clear;python2 %<CR>
 
 " Settings for vim-powerline
 " cd ~/.vim/bundle
