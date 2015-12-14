@@ -30,7 +30,7 @@
 	url = https://github.com/vim-scripts/The-NERD-tree.git
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
-	url = git://github.com/Lokaltog/vim-powerline.git
+	url = https://github.com/Lokaltog/vim-powerline.git
 [submodule "package/powerline"]
 	path = package/powerline
 	url = https://github.com/powerline/powerline.git
