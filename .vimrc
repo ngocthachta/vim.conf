@@ -221,4 +221,3 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 " Toogle NERDTree
 nnoremap <silent> <F9> :NERDTreeToggle<CR>
 
-
