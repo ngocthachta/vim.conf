@@ -58,6 +58,16 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <c-l> :TmuxNavigateUp<cr>
+nnoremap <silent> <c-h> :TmuxNavigateRight<cr>
+nnoremap <silent> <c-a> :TmuxNavigatePrevious<cr>
+
+" autosave on leave
+let g:tmux_navigator_save_on_switch = 1
 
 " easier moving between tabs
 "" map <Leader>n <esc>:tabprevious<CR>
