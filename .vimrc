@@ -2,7 +2,7 @@
 autocmd! bufwritepost .vimrc source %
 
 " Quickly open/source .vimrc
-nnoremap <Leader>vv :e $MYVIMRC<CR>
+nnoremap <leader>vv :e $MYVIMRC<CR>
 
 
 " Better copy & paste
@@ -58,6 +58,7 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
+" tmux navigator binding
 let g:tmux_navigator_no_mappings = 1
 
 nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
@@ -191,6 +192,7 @@ set wildignore+=*/coverage/*
 "" let g:pymode_syntax_builtin_objs = 0
 "" let g:pymode_syntax_builtin_funcs = 0
 "" map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+let g:pymode_doc = 1
 let g:pymode_motion = 1
 
 " Settings for jedi-vim
