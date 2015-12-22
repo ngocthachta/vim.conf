@@ -24,8 +24,7 @@ set bs=2     " make backspace behave like normal again
 let mapleader = ","
 
 set showcmd
-filetype plugin on
-set dictionary+=/usr/share/dict/cracklib-small
+" set dictionary+=/usr/share/dict/cracklib-small
 set modeline
 set background=dark
 " autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
@@ -104,7 +103,7 @@ color wombat256mod
 filetype on
 filetype plugin indent on
 syntax on
-
+filetype plugin on
 
 " Showing line numbers and length
 set number  " show line numbers
@@ -206,6 +205,7 @@ let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
 let g:jedi#force_py_version = 2
 let g:jedi#use_tag_stack = 1
+let g:jedi#auto_close_doc = 1
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 " Setting for syntastic
