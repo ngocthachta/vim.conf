@@ -249,4 +249,5 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 " Toogle NERDTree
 nnoremap <silent> <F9> :NERDTreeToggle<CR>
 
-let g:SuperTabDefaultCompletionType = 'context'
+" let g:SuperTabDefaultCompletionType = 'context'
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
