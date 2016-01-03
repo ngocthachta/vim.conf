@@ -207,7 +207,7 @@ set wildignore+=*/coverage/*
 " let g:jedi#auto_initialization = 1
 " let g:jedi#auto_vim_configuration = 1
 " let g:jedi#usages_command = "<leader>z"
-let g:jedi#popup_on_dot = 0
+let g:jedi#popup_on_dot = 1
 let g:jedi#popup_select_first = 0
 let g:jedi#force_py_version = 2
 let g:jedi#use_tag_stack = 1
@@ -255,8 +255,8 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 " Toogle NERDTree
 nnoremap <silent> <F9> :NERDTreeToggle<CR>
 
-" let g:SuperTabDefaultCompletionType = 'context'
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:SuperTabDefaultCompletionType = 'context'
+" let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 " config snipmate for AutoComplPop
 let g:acp_behaviorSnipmateLength = 1
