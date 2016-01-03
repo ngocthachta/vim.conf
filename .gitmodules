@@ -70,3 +70,9 @@
 [submodule "bundle/vim-clang"]
 	path = bundle/vim-clang
 	url = https://github.com/justmao945/vim-clang.git
+[submodule "bundle/neocomplete.vim"]
+	path = bundle/neocomplete.vim
+	url = https://github.com/Shougo/neocomplete.vim.git
+[submodule "bundle/vim-inccomplete"]
+	path = bundle/vim-inccomplete
+	url = https://github.com/xaizek/vim-inccomplete.git
