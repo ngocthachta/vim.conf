@@ -1,4 +1,4 @@
-" requires : python, lua, perl, ruby, gui
+" requires : python, lua, perl, ruby, gui, clang
 " install vim
 " ./configure --enable-pythoninterp=yes --enable-python3interp=yes \
 " --enable-perlinterp=yes --enable-rubyinterp=yes --enable-luainterp=yes \ 
