@@ -1,6 +1,12 @@
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
 
+" source the .vimrc at local directory
+set exrc
+
+" restrict usage of some commands in non-default .vimrc file
+set secure
+
 " Quickly open/source .vimrc
 nnoremap <leader>vv :e $MYVIMRC<CR>
 
@@ -251,3 +257,6 @@ nnoremap <silent> <F9> :NERDTreeToggle<CR>
 
 " let g:SuperTabDefaultCompletionType = 'context'
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
+" config snipmate for AutoComplPop
+let g:acp_behaviorSnipmateLength = 1
