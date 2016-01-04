@@ -1,9 +1,16 @@
 " requires : python, lua, perl, ruby, gui, clang
+" curses-dev, ncurses-devel.x86_64, perl-devel.x86_64, 
+" perl-ExtUtils-Embed.noarch, perl-ExtUtils-ParseXS, perl-ExtUtils-XSpp,
+" perl-ExtUtils-CBuilder, 
+" libx11-dev libxpm-dev libxt-dev libX11-devel libXt-devl
+" libgnome-devel.x86_64 libgnomeui-devel.x86_64 libgnome.x86_64 libgnomeui.x86_64
+" libXpm.x86_64 libXpm-devel.x86_64
+" libXt.x86_64 libXt-devel.x86_64 libXtst.x86_64 libXtst-devel.x86_64
 " install vim
 " ./configure --enable-pythoninterp=yes --enable-python3interp=yes \
 " --enable-perlinterp=yes --enable-rubyinterp=yes --enable-luainterp=yes \ 
 " --enable-gui=yes --with-features=huge --prefix=$HOME/opt/vim
-"  make && make install
+" make && make install
 
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
