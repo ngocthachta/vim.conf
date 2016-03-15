@@ -15,6 +15,9 @@
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
 
+" Automatic refreshing the file with :edit
+set autoread
+
 " source the .vimrc at local directory
 set exrc
 
@@ -179,8 +182,8 @@ call pathogen#helptags()
 " ============================================================================
 
 " run python code from Vim
-" map <F5> :w <CR>!clear <CR>:!python2 % <CR>
-nnoremap <silent> <F5> :!clear;python2 %<CR>
+" map <F6> :w <CR>!clear <CR>:!python2 % <CR>
+nnoremap <silent> <F6> :!clear;python2 %<CR>
 
 " Settings for vim-powerline
 " cd ~/.vim/bundle
@@ -241,6 +244,11 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_python_exec = '/usr/bin/python2'
+let g:syntastic_mode_map = { "mode" : "active", "passive_filetypes" : ["cpp","c", "h"]}
+
+" clang options
+let g:clang_c_options='-std=gnu11'
+let g:clang_cpp_options='-std=c++11'
 
 " Better navigating through omnicomplete option list
 " See http://stackoverflow.com/questions/2170023/how-to-map-keys-for-popup-menu-in-vim
@@ -270,8 +278,8 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 " Toogle NERDTree
 nnoremap <silent> <F9> :NERDTreeToggle<CR>
 
-" let g:SuperTabDefaultCompletionType = 'context'
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:SuperTabDefaultCompletionType = 'context'
+" let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 " config snipmate for AutoComplPop
 " let g:acp_behaviorSnipmateLength = 1
