@@ -199,7 +199,8 @@ let g:ctrlp_open_new_file = 'r'
 set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=*/coverage/*
-
+set wildignore+=*.o,*.so,*.zip,*.tz
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg\svn)$'
 
 " Settings for python-mode
 " Note: I'm no longer using this. Leave this commented out
