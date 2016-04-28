@@ -198,6 +198,7 @@ let g:ctrlp_max_height = 30
 let g:ctrlp_open_new_file = 'r'
 set wildignore+=*.pyc
 set wildignore+=*_build/*
+set wildignore+=*/bin/*
 set wildignore+=*/coverage/*
 set wildignore+=*.o,*.so,*.zip,*.tz
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg\svn)$'

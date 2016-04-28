@@ -76,3 +76,6 @@
 [submodule "bundle/vim-inccomplete"]
 	path = bundle/vim-inccomplete
 	url = https://github.com/xaizek/vim-inccomplete.git
+[submodule "bundle/a.vim"]
+	path = bundle/a.vim
+	url = https://github.com/vim-scripts/a.vim.git
