@@ -252,6 +252,7 @@ let g:syntastic_mode_map = { "mode" : "active", "passive_filetypes" : ["cpp","c"
 let g:clang_c_options = '-std=gnu11'
 let g:clang_cpp_options = '-std=c++11'
 let g:clang_auto_select = 0
+" let g:clang_auto = 0
 
 " Better navigating through omnicomplete option list
 " See http://stackoverflow.com/questions/2170023/how-to-map-keys-for-popup-menu-in-vim
